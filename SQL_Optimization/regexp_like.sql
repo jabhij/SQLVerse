@@ -27,3 +27,10 @@ REGEXP_LIKE
       
  WHERE
   REGEXP_LIKE (lower(item_name), 'abc | xyz | lmn | ijk')
+
+
+/*
+Case Study
+*/
+
+??
