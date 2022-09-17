@@ -27,3 +27,10 @@ SELECT
   REGEXP_EXTRACT(itam_name, '(abc | xyz | lmn |..)')
 AS random_names
 FROM item_list
+
+
+/*
+Case Study
+*/
+
+?
