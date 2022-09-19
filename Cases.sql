@@ -29,3 +29,8 @@ SELECT
         WHEN A <> B AND B <> C THEN 'Scalene'
     END tuple
 FROM TRIANGLES
+
+
+/*
+SQL Optimization can be used
+*/
