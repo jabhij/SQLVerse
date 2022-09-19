@@ -3,3 +3,8 @@
 UNDER CONSTRUCTION 
 
 */
+
+## TIPS -
+
+  1. Avoid UNIONs where possible
+  2. Use WITH statements vs. nested subqueries
