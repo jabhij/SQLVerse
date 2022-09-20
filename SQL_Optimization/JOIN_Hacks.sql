@@ -6,7 +6,6 @@ Always order your JOINs from largest tables to smallest tables
 /*
 Smallest table first
 */
-
 SELECT 
   *
 FROM 
@@ -19,7 +18,6 @@ ON small_table.id = large_table.id
 /*
 Largest  table first
 */
-
 SELECT 
   *
 FROM 
