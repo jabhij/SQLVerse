@@ -21,7 +21,6 @@ Col_1 | Col_2 | Col_3 | result
 ------------------------------
 
 
-
 SELECT
 COUNT(*) FROM Table1
 AS result
