@@ -28,7 +28,7 @@ AS result
 result  
 ------
   4   
------
+------
 
 
 SELECT
@@ -38,7 +38,7 @@ AS result
 result  
 ------
   5   
------
+------
 
 
 SELECT
@@ -48,7 +48,7 @@ AS result
 result  
 ------
   5   
------
+------
 
 
 SELECT
@@ -58,4 +58,4 @@ AS result
 result  
 ------
   5   
------
+------
