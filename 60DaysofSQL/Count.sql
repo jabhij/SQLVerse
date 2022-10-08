@@ -33,7 +33,7 @@ result
 
 SELECT
 COUNT(col_2) FROM Table1
-AS result
+AS result;
 ------
 result  
 ------
@@ -43,7 +43,7 @@ result
 
 SELECT
 COUNT(1) FROM Table1
-AS result
+AS result;
 ------
 result  
 ------
@@ -53,7 +53,7 @@ result
 
 SELECT
 COUNT(One) FROM Table1
-AS result
+AS result;
 ------
 result  
 ------
