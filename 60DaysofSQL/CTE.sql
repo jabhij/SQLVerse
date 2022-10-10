@@ -4,7 +4,8 @@ CTE - Common table expression
 - Every statement or query produces a temporary relation/outcome in MYSQL. A CTE is used to name those temporary
   results Which are under the execution scope of- INSERT, UPDATE, DELETE, SELECT, etc. operations.
 - CTEs are defined using WITH clause.
-- CTEs are stored in the memory rather than Temporary DB
+- CTEs are stored in the memory rather than Temporary DB.
+- It can be either NON-RECURSIVE or RECURSIVE.
 
 */
 
@@ -22,6 +23,7 @@ Table1 -
 +------+-------+-------+-------+
 
 
+??
 WITH RECURSIVE 
 cte_name [(col_1, col_2)]
 AS (subquery)
