@@ -3,7 +3,7 @@ OPERATORS --
 |        OPERATOR	   |                      CONDITIONS	                     |                     DEMO                  |
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
 |                          |                                                         |  col_name = value                         |
-|     =, !=, < <=, >, >=	 |  Standard numerical operators	                         |  col_name != value                        |
+|   =, !=, < <=, >, >=	|  Standard numerical operators	                     |  col_name != value                        |
 |                          |                                                         |  col_name <= value                        | 
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
 |    BETWEEN ... AND ...   |  Number is within range of two values (inclusive)       |  col_name BETWEEN value_1 AND value_2     |
