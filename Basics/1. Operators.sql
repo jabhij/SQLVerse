@@ -8,7 +8,7 @@ OPERATORS --
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
 |    BETWEEN ... AND ...   |  Number is within range of two values (inclusive)       |  col_name BETWEEN value_1 AND value_2     |
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
-|  NOT BETWEEN ... AND ... |  Number is not within range of two values (inclusive)	 |  col_name NOT BETWEEN value_1 AND value_2 |
+|  NOT BETWEEN ... AND ... |  Number is not within range of two values (inclusive) |  col_name NOT BETWEEN value_1 AND value_2 |
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
 |          IN (...)	     |  Number exists in a list	                               |  col_name IN (value_1, value_2)           |
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
