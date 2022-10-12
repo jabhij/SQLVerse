@@ -6,6 +6,8 @@ OPERATORS --
 | =, != or <>, < <=, >, >= |  Standard numerical operators	                     |  col_name != value                        |
 |                          |                                                         |  col_name <= value                        | 
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
+|             %            |  Used anywhere in the string to match a sequence        |  col_name LIKE "%string_name"             |
++--------------------------+---------------------------------------------------------+-------------------------------------------+
 |    BETWEEN ... AND ...   |  Number is within range of two values (inclusive)       |  col_name BETWEEN value_1 AND value_2     |
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
 |  NOT BETWEEN ... AND ... |  Number is not within range of two values (inclusive)   |  col_name NOT BETWEEN value_1 AND value_2 |
@@ -14,7 +16,10 @@ OPERATORS --
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
 |        NOT IN (...)	   |  Number does not exist in a list	                     |  col_name NOT IN (value_1, value_2)       |
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
-
+|          LIKE ...        |  Case insensitive exact string comparison               |  col_name LIKE "string_name"              |
++--------------------------+---------------------------------------------------------+-------------------------------------------+
+|        NOT LIKE ...      |  Case insensitive exact string inequality comparison    |  col_name NOT LIKE "string_name"          |
++--------------------------+---------------------------------------------------------+-------------------------------------------+
 
 Students --
 +------------+--------------+--------------+--------+
