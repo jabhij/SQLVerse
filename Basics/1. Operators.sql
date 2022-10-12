@@ -37,7 +37,6 @@ EXAMPLES -
 /* 
 Selecting all values for student 'C' 
 */
-
 SELECT * 
 FROM Students
 WHERE Student_Name = C;
@@ -50,7 +49,6 @@ WHERE Student_Name = C;
 /* 
 Selecting Passing Year and Grades for students having Ids between 1 and 3
 */
-
 SELECT Passing_Year, Grades 
 FROM Students
 WHERE Student_ID BETWEEN 1 AND 3;
