@@ -3,7 +3,7 @@ OPERATORS --
 |        OPERATOR	   |                      CONDITIONS	                     |                     DEMO                  |
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
 |                          |                                                         |  col_name = value                         |
-|      =, < <=, >, >=      |  Standard numerical operators (case sensitive)	         |  col_name != value                        |
+|      =, < <=, >, >=      |  Standard numerical operators (case sensitive)	      |  col_name != value                        |
 |                          |                                                         |  col_name <= value                        | 
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
 |         != or <>         |  Case sensitive exact string inequality comparison      |  col_name LIKE "%string_name"             |
