@@ -6,7 +6,8 @@ OPERATORS --
 |      =, < <=, >, >=      |  Standard numerical operators (case sensitive)	     |  col_name != value                        |
 |                          |                                                         |  col_name <= value                        | 
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
-|         != or <>         |  Case sensitive exact string inequality comparison      |  col_name LIKE "%string_name"             |
+|         != or <>         |  Case sensitive exact string inequality comparison      |  col_name != value                        |
+|                          |                                                         |  col_name != "string"                     |                                
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
 |             %            |  Used anywhere in the string to match a sequence        |  col_name LIKE "%string_name"             |
 +--------------------------+---------------------------------------------------------+-------------------------------------------+
