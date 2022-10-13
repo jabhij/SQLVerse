@@ -1,0 +1,26 @@
+                                    **     FROM  **
+                         [Points the table where data is stored]
+                                          ⬇
+                                      JOIN + ON  
+  [Gets the matching records based upon shared column(s), when data is from multipls tables]
+                                          ⬇
+                                         WHERE  
+                           [Filters the data at a row level]
+                                          ⬇
+                                      GROUP BY  
+                    [Groups rows with the similar values together]
+                                          ⬇
+                                        HAVING  
+                             [Applies filters/conditions]
+                                          ⬇
+                                        SELECT  
+                                 [Select the values]
+                                          +
+                                   WINDOW FUNCTIONS  
+                     [Looks at the value from the set of rows]
+                                          ⬇
+                                       ORDER BY  
+                             [Sorts the resulting rows]
+                                          ⬇
+                                    LIMIT / FETCH  
+                            [Limits the number of rows]
