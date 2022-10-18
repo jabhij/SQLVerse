@@ -8,9 +8,7 @@ FROM information_schema.tables
 LIMIT 20;
 
 
-/*
 Output -
-*/
 
 * 
 * * 
