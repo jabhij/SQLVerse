@@ -31,18 +31,18 @@ Students --                                                   University_Details
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+   
 |      5     |       E      |     NULL     |   2.5  |         |      4     |      IJU     |         |     JKU    |    BS     |    1   |  
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+   
-                                                                                                    |     LMN    |    ML     |    3   | 
-                                                                                                    +------------+-----------+--------+ 
+|      6     |       F      |     NULL     |   3.3  |                                                                                                     |     LMN    |    ML     |    3   | 
++------------+--------------+--------------+--------+                                                                                                    +------------+-----------+--------+ 
 
----------- INNER JOIN ----------
+---------- LEFT OUTER JOIN ----------
 
 /* 
-INNER JOIN -
+LEFT JOIN -
 Select the University along with the Student
 */
 SELECT Uni_Name, Student_Name
 FROM University_Details
-  INNER JOIN Students
+  LEFT JOIN Students
     ON (Students.Student_Id = University_Details.Id);
 +------------+--------------+ 
 |  Uni_Name  | Student_Name |  
@@ -57,16 +57,18 @@ FROM University_Details
 +------------+--------------+ 
 |     IJU    |       D      |   
 +------------+--------------+
+|      -     |       F      |   
++------------+--------------+
 
 /* 
-INNER JOIN -
+LEFT JOIN -
 Select the Course along with the Students
 */
-SELECT Course
+SELECT Course, Student_Name
 FROM Ranks
-  JOIN University_Details
+  LEFT JOIN University_Details
     ON (Ranks.University = University_Details.Uni_Name)
-    JOIN Students
+    LEFT JOIN Students
       ON (University_Details.Id = Students.Student_Id)
 +------------+--------------+ 
 |   Course   | Student_Name |  
@@ -81,16 +83,18 @@ FROM Ranks
 +------------+--------------+ 
 |     BS     |       D      |   
 +------------+--------------+
+|      -     |       F      |   
++------------+--------------+
 
 /* 
-INNER JOIN -
+LEFT JOIN -
 Select the Course for the student B 
 */
 SELECT Course
 FROM Ranks
-  JOIN University_Details
+  LEFT JOIN University_Details
     ON (Ranks.University = University_Details.Uni_Name)
-    JOIN Students
+    LEFT JOIN Students
       ON (University_Details.Id = Students.Student_Id)
       
 WHERE Student_Name = "B"
@@ -99,5 +103,14 @@ WHERE Student_Name = "B"
 +------------+--------------+ 
 |     DS     |       B      |    
 +------------+--------------+ 
-
+|      -     |       A      |     
++------------+--------------+ 
+|      -     |       C      |   
++------------+--------------+ 
+|      -     |       D      |    
++------------+--------------+ 
+|      -     |       E      |   
++------------+--------------+
+|      -     |       F      |   
++------------+--------------+
 _________________________________________________________________________________________________________________________________________
