@@ -5,15 +5,16 @@ JOINS --
 |  INNER JOIN / | - Returns only those rows where the linking values match in both    | INNER JOIN table1                         |
 |  JOIN         |   of the tables or in result sets.                                  |   ON (tabl1.col_name = table2.col_name);  |
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
-|  OUTER JOIN   |               
+|  LEFT OUTER   | - Common values from both the tables + All the selected values from | LEFT JOIN table1                          |
+|  JOIN         |   from the left table.                                              |   ON (tabl1.col_name = table2.col_name);  |
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
-|  LEFT JOIN    |                 
+|  RIGHT OUTER  | - Common values from both the tables + All the selected values from | RIGHT JOIN table1                         |
+|  JOIN         |   from the right table.                                             |   ON (tabl1.col_name = table2.col_name);  |
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
-|  RIGHT JOIN   |               
+|  FULL JOIN    | - LEFT OUTER JOIN U RIGHT OUTER JOIN.                               | (LEFT JOIN statement) UNION ALL           |
+|               |                                                                     | (RIGHT JOIN statement)                    |      
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
-|  SELF JOIN    |                
-+---------------+---------------------------------------------------------------------+-------------------------------------------+
-|  FULL JOIN    |            
+|  SELF JOIN    |            
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
 
 Students --                                                   University_Details --                 Ranks --
