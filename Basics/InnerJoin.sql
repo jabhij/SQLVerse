@@ -62,7 +62,7 @@ FROM University_Details
 INNER JOIN -
 Select the Course along with the Students
 */
-SELECT Course
+SELECT Course, Student_Name
 FROM Ranks
   JOIN University_Details
     ON (Ranks.University = University_Details.Uni_Name)
@@ -86,7 +86,7 @@ FROM Ranks
 INNER JOIN -
 Select the Course for the student B 
 */
-SELECT Course
+SELECT Course, Student_Name
 FROM Ranks
   JOIN University_Details
     ON (Ranks.University = University_Details.Uni_Name)
