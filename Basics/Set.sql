@@ -33,10 +33,10 @@ Students --                                                   University_Details
                                                                                                     |     LMN    |    ML     |    3   | 
                                                                                                     +------------+-----------+--------+ 
 
----------- INTERSECT ----------
+---------- UNION ----------
 
 /* 
-INTERSECT -
+UNION -
 Select the University along with the Student
 */
  
