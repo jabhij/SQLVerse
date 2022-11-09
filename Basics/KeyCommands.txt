@@ -1,20 +1,20 @@
 SQL is really only learning these below commands -
 
-SELECT
-FROM
-WHERE
-GROUP BY
-ORDER BY
-LIKE
-COUNT
-MAX/MIN
-AVG
-CASE WHEN
-JOIN
-DISTINCT
-HAVING
-LIMIT
-CTEs
-NULL / IS NULL
+    SELECT
+    FROM
+    WHERE
+    GROUP BY
+    ORDER BY
+    LIKE
+    COUNT
+    MAX/MIN
+    AVG
+    CASE WHEN
+    JOIN
+    DISTINCT
+    HAVING
+    LIMIT
+    CTEs
+    NULL / IS NULL
 
 What will you add to this list?
