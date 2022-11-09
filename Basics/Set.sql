@@ -5,13 +5,13 @@ SET --
 |     UNION     | - Takes all the values from both the tables except the duplicates.  |
 |               |                                                                     |
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
-|   UNION ALL   | - Takes all the values from both the tables even the duplicates.            
+|   UNION ALL   | - Takes all the values from both the tables even the duplicates.    |        
 |               |                                                                     |
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
-| INTERSECTION  | -                
+| INTERSECTION  | - Takes only the common values of the both tables.                  |
 |               |                                                                     |    
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
-|     EXCEPT    | -               
+|     EXCEPT    | - Takes values from a table that are not present in the another.    |          
 |               |                                                                     |          
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
 
