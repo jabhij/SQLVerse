@@ -1,4 +1,5 @@
 
+
 Students --                                                   University_Details --                 Ranks --
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+          
 | Student_Id | Student_Name | Passing_year | Grades |         |     Id     |    Uni_Name  |         | University |   Course  |  Rank  |  
@@ -15,23 +16,15 @@ Students --                                                   University_Details
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+   
                                                                                                     |     LMN    |    ML     |    3   | 
                                                                                                     +------------+-----------+--------+ 
-                                                                                                    
----------- INNER JOIN ----------
+                                                                                                   
+                                                                                                   
+/* Subquery */
 
-SELECT Uni_Name, Student_Name
-FROM University_Details
-  INNER JOIN Students
-    ON (Students.Student_Id = University_Details.Id);
-    
-    
----------- SUB QUERY ----------
 SELECT Uni_Name,
   (SELECT Student_Name
     FROM Students
       WHERE University_Details.ID = Students.Student_Id)
  FROM University_Details;
-  
-/* For both queries the output would be -- */
 
 +------------+--------------+ 
 |  Uni_Name  | Student_Name |  
