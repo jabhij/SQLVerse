@@ -15,8 +15,8 @@ TYPES --
 |     Subquery   | - Can be used in- WHERE, FROM, SELECT clauses.                      |   --- Subquery goes in here ---           |                                   |  
 |                |                                                                     |     FROM ---                              |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
-|  Multiple row  | - Common values from both the tables + All the selected values from | LEFT JOIN table1                          |
-|    Subquery    |   from the left table.                                              |   ON (tabl1.col_name = table2.col_name);  |
+|  Multiple row  | - Returns multiple columns and multiple rows.                       |                          |
+|    Subquery    | - Returns only 1 column and multiple rows.                          |     |
 |                |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
 |   Correlated   | - Common values from both the tables + All the selected values from | RIGHT JOIN table1                         |
