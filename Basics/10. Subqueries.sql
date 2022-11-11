@@ -11,14 +11,17 @@ TYPES --
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
 |       Type     |                               DETAILS                               |                   DEMO                    |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
-|      Scaler    | - Always returns only one column and one row.                       | INNER JOIN table1                         |
-|     Subquery   | - Can be used in- WHERE, FROM, SELECT clauses.                                                                  |     
+|      Scaler    | - Always returns only one column and one row.                       | SELECT ---                                |
+|     Subquery   | - Can be used in- WHERE, FROM, SELECT clauses.                      |   --- Subquery goes in here ---           |                                   |  
+|                |                                                                     |     FROM ---                              |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
 |  Multiple row  | - Common values from both the tables + All the selected values from | LEFT JOIN table1                          |
 |    Subquery    |   from the left table.                                              |   ON (tabl1.col_name = table2.col_name);  |
+|                |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
 |   Correlated   | - Common values from both the tables + All the selected values from | RIGHT JOIN table1                         |
 |    Subquery    |   from the right table.                                             |   ON (tabl1.col_name = table2.col_name);  |
+|                |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
 
 
