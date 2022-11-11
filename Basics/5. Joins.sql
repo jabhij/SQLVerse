@@ -12,13 +12,14 @@ JOINS --
 |  JOIN         |   from the right table.                                             |   ON (tabl1.col_name = table2.col_name);  |
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
 |  FULL JOIN    | - LEFT OUTER JOIN U RIGHT OUTER JOIN.                               | (LEFT JOIN statement) UNION ALL           |
-|               |                                                                     | (RIGHT JOIN statement)                    |      
+|               |                                                                     | (RIGHT JOIN statement);                   |      
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
 |  SELF JOIN    | -
-|               |                                                                     |                    |  
+|               |                                                                     |                     
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
-|  CROSS JOIN   | -                               
-|               |                                                                     |                 |  
+|               | - it combines each row from the first table with each row from the  | SELECT table1.Id, table2.Id               |                                          
+|   CROSS JOIN  |   second table.                                                     |   FROM table1                             |
+|               |                                                                     |     CROSS JOIN table2;                    |
 +---------------+---------------------------------------------------------------------+-------------------------------------------+
 |   SEMI JOIN   | -                  
 |               |                                                                     |                  |  
