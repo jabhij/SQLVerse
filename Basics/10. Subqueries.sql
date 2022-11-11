@@ -19,7 +19,7 @@ TYPES --
 |    Subquery    | - Returns only 1 column and multiple rows.                          |   --- Subquery goes in here ---           |
 |                |                                                                     |      FROM ---                             |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
-|   Correlated   | -   | RIGHT JOIN table1                         |
+|   Correlated   | - [c](https://github.com/jabhij/SQLVerse/blob/main/Intermediate/CorrelatedSubQ.sql)  |                           |
 |    Subquery    |                                                |   ON (tabl1.col_name = table2.col_name);  |
 |                |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
