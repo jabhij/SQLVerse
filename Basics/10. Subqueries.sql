@@ -19,9 +19,12 @@ TYPES --
 |    Subquery    | - Returns only 1 column and multiple rows.                          |   --- Subquery goes in here ---           |
 |                |                                                                     |      FROM ---                             |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
-|   Correlated   | - [c](https://github.com/jabhij/SQLVerse/blob/main/Intermediate/CorrelatedSubQ.sql)  |                           |
-|    Subquery    |                                                |   ON (tabl1.col_name = table2.col_name);  |
-|                |
+|                | - Correlated subqueries are subqueries that reference one or more   |                                           |
+|                |   columns in in the main query.                                     |                                           |
+|   Correlated   | - Correlated subqueries depend on information in the main query to  |                                           |
+|    Subquery    |   run, and thus, cannot be executed on their own.                   |                                           |
+|                | - Correlated subqueries are evaluated in SQL once per row of data   |                                           |
+|                |   retrieved.                                                        |                                           |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
 
 
