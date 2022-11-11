@@ -15,12 +15,12 @@ TYPES --
 |     Subquery   | - Can be used in- WHERE, FROM, SELECT clauses.                      |   --- Subquery goes in here ---           |                                   |  
 |                |                                                                     |     FROM ---                              |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
-|  Multiple row  | - Returns multiple columns and multiple rows.                       |                          |
-|    Subquery    | - Returns only 1 column and multiple rows.                          |     |
-|                |
+|  Multiple row  | - Returns multiple columns and multiple rows.                       | SELECT ---                                |                         |
+|    Subquery    | - Returns only 1 column and multiple rows.                          |   --- Subquery goes in here ---           |
+|                |                                                                     |      FROM ---                             |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
-|   Correlated   | - Common values from both the tables + All the selected values from | RIGHT JOIN table1                         |
-|    Subquery    |   from the right table.                                             |   ON (tabl1.col_name = table2.col_name);  |
+|   Correlated   | -   | RIGHT JOIN table1                         |
+|    Subquery    |                                                |   ON (tabl1.col_name = table2.col_name);  |
 |                |
 +----------------+---------------------------------------------------------------------+-------------------------------------------+
 
