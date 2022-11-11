@@ -1,12 +1,14 @@
 
 
 +---------------------------------------------------------+---------------------------------------------------------+
-|                         JOINS                           |                          UNIONS                         |
+|                         JOINS                           |                        SUB QUERY                        |
 +---------------------------------------------------------+---------------------------------------------------------+
 | - Used for joining multiple tables.                     | - Used for joining multiple tables.                     |
 +---------------------------------------------------------+---------------------------------------------------------+
-| - Two tables can have different number of columns, but  | - Two tables must have same number of columns, and the  |
-|   the corresponding columns must have compatible types. |   corresponding columns must have compatible types.     |
+| - Two tables can have different number of columns, but  | - Two tables can have different number of columns, but  |
+|   the corresponding columns must have compatible types. |   the corresponding columns must have compatible types. |
++---------------------------------------------------------+---------------------------------------------------------+
+| - Faster execution                                      | - Slower in comparison to JOINS                         |
 +---------------------------------------------------------+---------------------------------------------------------+
 
 Students --                                                   University_Details --                 Ranks --
