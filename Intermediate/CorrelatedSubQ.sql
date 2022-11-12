@@ -9,7 +9,7 @@ Correlated Subqueries --
 | - Correlated subqueries are evaluated in SQL once per row of data retrieved  |
 |   -- a process that takes a lot more computing power & time than a simple    | 
 |   subquery.                                                                  |
-+-------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
 
  
  
