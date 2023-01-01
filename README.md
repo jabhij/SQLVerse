@@ -35,4 +35,4 @@ Some of the interesting examples like-
 would be covered with utmost simplicity.
 
 ### License
-Include the license for the project, or a link to the license file.
+Open (with reference)
