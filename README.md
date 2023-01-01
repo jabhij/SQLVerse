@@ -23,19 +23,16 @@ I'll be inclusing-
 - Basic type of SQL operations & clauses (theory + implementation)
 - There will be a comperative study for complex topics like- JOINS
 - Comperative cases for JOINS vs UNIONS, etc.
-- Covering top & most used SQL caluses in the industry
+- Covering top & most used SQL caluses in the industry.
 
 ### Examples
-Include some examples of how to use the project, if applicable. These may include SQL queries or examples of how to use the project's SQL-related features.
+Some of the interesting examples like- 
+- INNER vs OUTER JOIN
+- DROP vs DELETE vs TRUNCATE
+- ORDER BY vs GROUP BY
+- HAVING vs WHERE
 
-### Documentation
-Link to any relevant documentation, such as a project wiki or API documentation. This may include information on how to use the project's SQL-specific features.
-
-### Contributing
-Instructions on how to contribute to the project, including any guidelines for code style and testing.
+would be covered with utmost simplicity.
 
 ### License
 Include the license for the project, or a link to the license file.
-
-### Acknowledgements
-Credit any other sources or contributors to the project.
