@@ -32,5 +32,5 @@ FROM TRIANGLES
 
 
 /*
-SQL Optimization can be used
+SQL Optimization can be used -
 */
