@@ -1,6 +1,6 @@
 REGEXP (Regular Expression) vs LIKE --
 
-In SQL, both the 𝐋𝐈𝐊𝐄 operator and the 𝐑𝐄𝐆𝐄𝐗𝐏 (regular expression) operator can be used for pattern matching, but they differ in functionality and syntax. Let's check some crucial parameters-
+In SQL, both the LIKE operator & the REGEXP (regular expression) operator can be used for pattern matching, but they differ in functionality & syntax. Let's check some crucial parameters-
 
 1. 𝐏𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞-
 LIKE tends to be more efficient than REGEXP. Regular expressions involve more complex pattern-matching algorithms, which can be slower when dealing with large datasets. If performance is a crucial consideration and your pattern-matching needs can be met with LIKE, it may be a more optimal choice.
