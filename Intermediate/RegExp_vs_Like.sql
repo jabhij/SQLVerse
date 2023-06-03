@@ -25,7 +25,7 @@ is more efficient for your specific situation.
 By default, both LIKE & REGEXP are case-sensitive. However, some database systems provide options to make them case-insensitive. If you need case-insensitive 
 pattern matching, check the capabilities of your database system.
 
-------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Students --                                                   University_Details --                 Ranks --
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+          
@@ -43,6 +43,8 @@ Students --                                                   University_Details
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+   
 |      6     |       F      |     NULL     |   3.3  |                                               |     LMN    |    ML     |    3   | 
 +------------+--------------+--------------+--------+                                               +------------+-----------+--------+ 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 A. Selects all Student's Name with a Passing year starting with "S":
 
