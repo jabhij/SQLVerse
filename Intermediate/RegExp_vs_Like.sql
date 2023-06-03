@@ -44,8 +44,17 @@ Students --                                                   University_Details
 |      6     |       F      |     NULL     |   3.3  |                                               |     LMN    |    ML     |    3   | 
 +------------+--------------+--------------+--------+                                               +------------+-----------+--------+ 
 
----------- LEFT OUTER JOIN ----------
+A. Selects all Student's Name with a Passing year starting with "S":
 
+/* Using LIKE */
+SELECT Student_Name FROM Students
+WHERE Passing_year LIKE 'S%';
+
+/* Using REGEXP */
+SELECT Student_Name FROM Students
+WHERE Passing_year REGEXP '^S';
+
+B. 
 
 
 ---------- LEFT OUTER JOIN ----------
