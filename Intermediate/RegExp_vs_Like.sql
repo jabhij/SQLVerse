@@ -46,17 +46,43 @@ Students --                                                   University_Details
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-A. Selects all Student's Name with a Passing year starting with "S":
+A. Select all Student's detail with a Passing year starting with "S":
 
 /* Using LIKE */
-SELECT Student_Name FROM Students
+SELECT * FROM Students
 WHERE Passing_year LIKE 'S%';
 
 /* Using REGEXP */
-SELECT Student_Name FROM Students
+SELECT * FROM Students
 WHERE Passing_year REGEXP '^S';
 
-B. 
++------------+--------------+--------------+--------+                   
+| Student_Id | Student_Name | Passing_year | Grades |           
++------------+--------------+--------------+--------+        
+|      1     |       A      |     S2024    |   3.0  |        
++------------+--------------+--------------+--------+       
+|      4     |       D      |     S2025    |   3.0  |         
++------------+--------------+--------------+--------+ 
+
+B. Select all University's detail with a course name ending with "S":
+
+/* Using LIKE */
+SELECT * FROM Ranks
+WHERE Course LIKE '%S';
+
+/* Using REGEXP */
+SELECT * FROM Ranks
+WHERE Course REGEXP 'S$';
+
++------------+-----------+--------+          
+|     LMU    |    DS     |    4   | 
++------------+-----------+--------+     
+|     XYU    |    CS     |    6   |  
++------------+-----------+--------+     
+|     JKU    |    BS     |    1   |  
++------------+-----------+--------+   
+
+C.
 
 
 ---------- LEFT OUTER JOIN ----------
