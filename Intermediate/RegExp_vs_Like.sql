@@ -31,7 +31,7 @@ Students --                                                   University_Details
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+          
 | Student_Id | Student_Name | Passing_year | Grades |         |     Id     |    Uni_Name  |         | University |   Course  |  Rank  |  
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+   
-|      1     |       A      |     S2024    |   3.0  |         |      2     |      LMU     |         |     LMU    |    DS     |    4   | 
+|      1     |       A      |     S2024    |   3.0  |         |      2     |      LMU     |         |     LMU    |    CDS    |    4   | 
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+   
 |      2     |       B      |     F2023    |   4.0  |         |      3     |      PSU     |         |     PSU    |    PSY    |    5   |  
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+   
@@ -50,11 +50,11 @@ A. Select all Student's detail with a Passing year starting with "S":
 
 /* Using LIKE */
 SELECT * FROM Students
-WHERE Passing_year LIKE 'S%';
+WHERE Passing_year LIKE "S%";
 
 /* Using REGEXP */
 SELECT * FROM Students
-WHERE Passing_year REGEXP '^S';
+WHERE Passing_year REGEXP "^S";
 
 +------------+--------------+--------------+--------+                   
 | Student_Id | Student_Name | Passing_year | Grades |           
@@ -68,32 +68,148 @@ B. Select all University's detail with a course name ending with "S":
 
 /* Using LIKE */
 SELECT * FROM Ranks
-WHERE Course LIKE '%S';
+WHERE Course LIKE "%S";
 
 /* Using REGEXP */
 SELECT * FROM Ranks
-WHERE Course REGEXP 'S$';
+WHERE Course REGEXP "S$";
 
++------------+-----------+--------+ 
+| University |   Course  |  Rank  | 
 +------------+-----------+--------+          
-|     LMU    |    DS     |    4   | 
+|     LMU    |    CDS    |    4   | 
 +------------+-----------+--------+     
 |     XYU    |    CS     |    6   |  
 +------------+-----------+--------+     
 |     JKU    |    BS     |    1   |  
 +------------+-----------+--------+   
 
-C.
+C. Select all Student's detail with Passing year having "202" in any position:
 
+/* Using LIKE */
+SELECT * FROM Students
+WHERE Passing_year LIKE "%202%";
 
----------- LEFT OUTER JOIN ----------
+/* Using REGEXP */
+SELECT * FROM Students
+WHERE Passing_year REGEXP "202";
 
++------------+--------------+--------------+--------+                   
+| Student_Id | Student_Name | Passing_year | Grades |           
++------------+--------------+--------------+--------+        
+|      1     |       A      |     S2024    |   3.0  |        
++------------+--------------+--------------+--------+       
+|      2     |       B      |     S2023    |   4.0  |         
++------------+--------------+--------------+--------+ 
+|      3     |       C      |     S2022    |   3.7  |        
++------------+--------------+--------------+--------+       
+|      4     |       D      |     S2025    |   3.0  |         
++------------+--------------+--------------+--------+ 
 
+D. Select all University's detail with a course name having "S" and atleaast 2 characters in length:
 
----------- LEFT OUTER JOIN ----------
+/* Using LIKE */
+SELECT * FROM Ranks
+WHERE Course LIKE "C_%";
 
+/* Using REGEXP */
+SELECT * FROM Ranks
+WHERE Course REGEXP "CS.";
 
++------------+-----------+--------+ 
+| University |   Course  |  Rank  | 
++------------+-----------+--------+          
+|     LMU    |    CDS    |    4   | 
++------------+-----------+--------+     
+|     XYU    |    CS     |    6   |  
++------------+-----------+--------+     
 
----------- LEFT OUTER JOIN ----------
+E. Select all University's detail with a course name starting with "S" in the second position:
 
+/* Using LIKE */
+SELECT * FROM Ranks
+WHERE Course LIKE "_S%";
+
+/* Using REGEXP */
+SELECT * FROM Ranks
+WHERE Course REGEXP "^.{1}S.*";
+
+/*
+In the REGEXP Query-
+^     indicates the start of the string.
+.{1}  matches any single character.
+r     matches the letter 'r'.
+.*    matches zero or more of any character.
+*/
+
++------------+-----------+--------+ 
+| University |   Course  |  Rank  | 
++------------+-----------+--------+           
+|     PSU    |    PSY    |    5   | 
++------------+-----------+--------+     
+|     XYU    |    CS     |    6   |
++------------+-----------+--------+ 
+|     JKU    |    BS     |    1   |   
++------------+-----------+--------+ 
+
+F. Select all University's detail with a course name starting with "C" & ending with "S":
+
+/* Using LIKE */
+SELECT * FROM Ranks
+WHERE Course LIKE "C%S";
+
+/* Using REGEXP */
+SELECT * FROM Ranks
+WHERE Course REGEXP "^C.*S$";
+
++------------+-----------+--------+ 
+| University |   Course  |  Rank  | 
++------------+-----------+--------+          
+|     LMU    |    CDS    |    4   | 
++------------+-----------+--------+     
+|     XYU    |    CS     |    6   |  
++------------+-----------+--------+     
+
+G. Select all University's detail where a course name does not starts with "C":
+
+/* Using LIKE */
+SELECT * FROM Ranks
+WHERE Course NOT LIKE "C%";
+
+/* Using REGEXP */
+SELECT * FROM Ranks
+WHERE Course REGEXP "^[^C]";
+
++------------+-----------+--------+ 
+| University |   Course  |  Rank  | 
++------------+-----------+--------+          
+|     PSU    |    PSY    |    5   | 
++------------+-----------+--------+     
+|     IJU    |    ARCH   |    2   |  
++------------+-----------+--------+     
+|     JKU    |    BS     |    1   |
++------------+-----------+--------+  
+|     LMN    |    ML     |    3   | 
++------------+-----------+--------+ 
+
+H. Select all University's detail where a course name does not ends with "S":
+
+/* Using LIKE */
+SELECT * FROM Ranks
+WHERE Course NOT LIKE "%S";
+
+/* Using REGEXP */
+SELECT * FROM Ranks
+WHERE Course REGEXP "[^S]$";
+
++------------+-----------+--------+ 
+| University |   Course  |  Rank  | 
++------------+-----------+--------+          
+|     PSU    |    PSY    |    5   | 
++------------+-----------+--------+     
+|     IJU    |    ARCH   |    2   |  
++------------+-----------+--------+     
+|     LMN    |    ML     |    3   | 
++------------+-----------+--------+
 
 ---------- LEFT OUTER JOIN ----------
