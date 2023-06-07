@@ -15,6 +15,7 @@ Input Format
 
 The TRIANGLES table is described as follows:
         Column                 Type
+        
           A                  Integer
           B                  Integer
           C                  Integer
