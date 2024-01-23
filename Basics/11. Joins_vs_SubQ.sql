@@ -27,7 +27,11 @@ Students --                                                   University_Details
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+   
                                                                                                     |     LMN    |    ML     |    3   | 
                                                                                                     +------------+-----------+--------+ 
-                                                                                                    
+/* 
+QUERY -  
+Select the University and the Student's name
+*/
+  
 ---------- INNER JOIN ----------
 
 SELECT Uni_Name, Student_Name
