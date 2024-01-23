@@ -29,7 +29,7 @@ Students --                                                   University_Details
                                                                                                     +------------+-----------+--------+ 
 /* 
 QUERY -  
-Select the University and the Student's name
+Select the University and the Students name
 */
   
 ---------- INNER JOIN ----------
