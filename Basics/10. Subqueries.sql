@@ -1,31 +1,31 @@
 SUBQUERIES --
-+-----------------------------------------------------------------+-------------------------------------------+
-|                           DETAILS                               |                   DEMO                    |
-+-----------------------------------------------------------------+-------------------------------------------+
-| - A subquery is a query that is nested inside a SELECT, INSERT, | SELECT ---                                |
-|   UPDATE , or DELETE  statement, or inside another subquery.    |   --- Subquery goes in here ---           |
-|                                                                 |   FROM ---                                |
-+-------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------+-------------------------------------------+
+|                           DETAILS                           |                   DEMO                    |
++-------------------------------------------------------------+-------------------------------------------+
+| - A subquery is a query that is nested inside a DML command | SELECT ---                                |
+|   SELECT, INSERT, UPDATE, or DELETE  statement, or inside   |   --- Subquery goes in here ---           |
+|   another subquery.                                         |   FROM ---                                |
++-------------------------------------------------------------+-------------------------------------------+
 
 TYPES --
-+----------------+---------------------------------------------------------------------+-------------------------------------------+
-|       Type     |                               DETAILS                               |                   DEMO                    |
-+----------------+---------------------------------------------------------------------+-------------------------------------------+
-|      Scaler    | - Always returns only one column and one row.                       | SELECT ---                                |
-|     Subquery   | - Can be used in- WHERE, FROM, SELECT clauses.                      |   --- Subquery goes in here ---           |                                   |  
-|                |                                                                     |     FROM ---                              |
-+----------------+---------------------------------------------------------------------+-------------------------------------------+
-|  Multiple row  | - Returns multiple columns and multiple rows.                       | SELECT ---                                |                         |
-|    Subquery    | - Returns only 1 column and multiple rows.                          |   --- Subquery goes in here ---           |
-|                |                                                                     |      FROM ---                             |
-+----------------+---------------------------------------------------------------------+-------------------------------------------+
-|                | - Correlated subqueries are subqueries that reference one or more   |                                           |
-|                |   columns in in the main query.                                     |                                           |
-|   Correlated   | - Correlated subqueries depend on information in the main query to  |                                           |
-|    Subquery    |   run, and thus, cannot be executed on their own.                   |                                           |
-|                | - Correlated subqueries are evaluated in SQL once per row of data   |                                           |
-|                |   retrieved.                                                        |                                           |
-+----------------+---------------------------------------------------------------------+-------------------------------------------+
++----------------+-------------------------------------------------------------+-------------------------------------------+
+|       Type     |                               DETAILS                       |                   DEMO                    |
++----------------+-------------------------------------------------------------+-------------------------------------------+
+|      Scaler    | - Always returns only one column and one row.               | SELECT ---                                |
+|     Subquery   | - Can be used in- WHERE, FROM, SELECT clauses.              |   --- Subquery goes in here ---           |                                   |  
+|                |                                                             |     FROM ---                              |
++----------------+-------------------------------------------------------------+-------------------------------------------+
+|  Multiple row  | - Returns multiple columns and multiple rows.               | SELECT ---                                |                         |
+|    Subquery    | - Returns only 1 column and multiple rows.                  |   --- Subquery goes in here ---           |
+|                |                                                             |      FROM ---                             |
++----------------+-------------------------------------------------------------+-------------------------------------------+
+|                | - Correlated subqueries are subqueries that reference one   |                                           |
+|                |   or more columns in the main query.                        |                                           |
+|   Correlated   | - Correlated subqueries depend on information in the main   |                                           |
+|    Subquery    |   query to run, and thus, cannot be executed independently. |                                           |
+|                | - Correlated subqueries are evaluated in SQL once per row   |                                           |
+|                |   of data retrieved.                                        |                                           |
++----------------+-------------------------------------------------------------+-------------------------------------------+
 
 
 Students --                                                   University_Details --                 Ranks --
@@ -43,10 +43,9 @@ Students --                                                   University_Details
 |      5     |       E      |     NULL     |   2.5  |         |      4     |      IJU     |         |     JKU    |    BS     |    1   |  
 +------------+--------------+--------------+--------+         +------------+--------------+         +------------+-----------+--------+   
                                                                                                     |     LMN    |    ML     |    3   | 
-                                                                                                    +------------+-----------+--------+ 
+                                                                                                    +------------+-----------+--------+                                                                                           
                                                                                                    
-                                                                                                   
-/* Subquery */
+/* SUBQUERY */
 
 SELECT Uni_Name,
   (SELECT Student_Name
