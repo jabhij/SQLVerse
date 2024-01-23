@@ -12,10 +12,10 @@ TYPES --
 |       Type     |                               DETAILS                       |                   DEMO                    |
 +----------------+-------------------------------------------------------------+-------------------------------------------+
 |     Scaler     | - Always returns only one column and one row.               | SELECT ---                                |
-|    Subquery    | - Can be used in- WHERE, FROM, SELECT clauses.              |   --- Subquery goes in here ---           |                                   |  
+|    Subquery    | - Can be used in- WHERE, FROM, SELECT clauses.              |   --- Subquery goes in here ---           |                                    
 |                |                                                             |     FROM ---                              |
 +----------------+-------------------------------------------------------------+-------------------------------------------+
-|  Multiple Row  | - Returns multiple columns and multiple rows.               | SELECT ---                                |                         |
+|  Multiple Row  | - Returns multiple columns and multiple rows.               | SELECT ---                                |                         
 |  / Non-Scaler  | - Returns only 1 column and multiple rows.                  |   --- Subquery goes in here ---           |
 |    Subquery    | - We can use IN, EXISTS, HAVING                             |      FROM ---                             |
 +----------------+-------------------------------------------------------------+-------------------------------------------+
