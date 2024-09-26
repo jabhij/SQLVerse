@@ -30,3 +30,8 @@ SELECT
   JSON_EXTRACT_PATH_TEXT('{"name": "Jakob", "age": "6" }', '$.name') AS scalar_name,
   JSON_EXTRACT_PATH_TEXT('{"name": "Jakob", "age": "6" }', '$.age') AS json_age,
   JSON_EXTRACT_PATH_NUMBER('{"name": "Jakob", "age": "6" }', '$.age') AS scalar_age;
+
+-- SQL Fiddle
+"""
+	https://sqlfiddle.com/postgresql/online-compiler?id=948e35a4-f21b-4e9f-85bf-b62fd5470a19
+"""
