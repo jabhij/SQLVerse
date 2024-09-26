@@ -1,15 +1,15 @@
 """
-	  It's common in data engineering workflows to ingest data from API's. The API responses are typically 
-    stored in a data lake as JSON. But until that JSON is transformed, the data is mostly useless.
+    It's common in data engineering workflows to ingest data from API's. The API responses are typically 
+    stored in a data lake as JSON. But until JSON is transformed, the data will mostly be useless.
     SQL JSON functions let us parse JSON to extract the data inside. It allows us to turn semi-structured 
-    JSON data into tabular data so we can work with it in SQL.
+    JSON data can be converted into tabular data to work with it in SQL.
 	
     Here are two SQL JSON functions (Google BigQuery):
 		- JSON_EXTRACT() returns the actual JSON string
 		- JSON_EXTRACT_SCALAR() returns a scalar value (boolean, number, or string)
     
 	Here are four SQL JSON functions (PostgreSQL):
-   	- JSON_EXTRACT_PATH_TEXT() extracts a text value from a JSON document
+   		- JSON_EXTRACT_PATH_TEXT() extracts a text value from a JSON document
 		- JSON_EXTRACT_PATH_NUMBER() extracts a numeric value from a JSON document
 		- JSON_EXTRACT_PATH_BOOLEAN() extracts a boolean value from a JSON document
 		- JSON_EXTRACT_PATH() extracts a value of any type from a JSON document
